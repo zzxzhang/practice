@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+  <head>
+    <title>System JS</title>
+  </head>
+  <body>
+    <button onclick="onClick()">点击</button>
+    <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/systemjs/6.10.2/system.js"></script>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "lodash": "https://unpkg.com/lodash@4.17.10/lodash.\
+          
+        }
+      }
+    </script>
+    <script type="systemjs-module" src="./dist/index.js"></script>
+  </body>
+</html>
