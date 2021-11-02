@@ -2,6 +2,22 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "lerna": "^4.0.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "useWorkspaces": true,
+  "scripts": {
+    "install": "lerna bootstrap",
+    "start:react": "cd packages/react-app && npm run start",
+    "start:vue": "cd packages/vue && yarn serve",
+    "start.qiankun": "cd packages/micro-qiankun && npm run start",
+    "start": "npm-run-all --parallel start:*"
+  },
+  "npmClient": "yarn",
+  "dependencies": {
+    "xgplayer-mp4": "^1.2.4"
   }
 }

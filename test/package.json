@@ -1,0 +1,25 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {
+    "@hetao/xgplayer-mp4": "^1.2.3",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
+    "video.js": "^7.15.4",
+    "xgplayer": "^2.30.2"
+  }
+}

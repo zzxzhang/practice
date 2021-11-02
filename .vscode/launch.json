@@ -4,7 +4,8 @@
       "type": "node",
       "request": "launch",
       "name": "debug current file",
-      "program": "${file}"
+      "program": "${file}",
+      "console": "integratedTerminal"
     },
     {
       "type": "node",
