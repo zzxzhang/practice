@@ -5,11 +5,13 @@
       "request": "launch",
       "name": "debug current file",
       "program": "${file}",
-      "console": "integratedTerminal"
+      // "program": "${workspaceFolder}/hello.js",
+      // "console": "integratedTerminal",
+      // "useWSL": true,
     },
     {
       "type": "node",
-      "request": "launch",
+      "request": "attach",
       "name": "debug server.js",
       "program": "${workspaceFolder}/server.js"
     }
